@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Of Legends Classic</title>
+    <style>
+        header{
+            background-color: #0A1428;
+            color:#785A28;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        main{
+            background-color: #0A1428;
+            color:aliceblue;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        .direitos{
+            text-align: center;
+            color:rgb(2, 2, 2);
+        }
+        .artigo{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>League Of Legends Classic</h1>
+        <p>O League of Legends Classic é um modo de jogo nostálgico que recria as primeiras temporadas do MOBA</p>
+    </header>
+   
+    <main>
+        <article>
+            <img src="Primeiro.png">
+            <div>
+                <h2>Conheça os 5 Campeões Mais Fortes do LoL Classic!</h2>
+                <p class="artigo">Por: Rafael Carvalho</p>
+                <ul>
+                    <li>1° - Kassadin (Mid)</li>
+                    <li>2° - Master Yi Ap (Mid / Jungle)</li>
+                    <li>3° - Jax (Top)</li>
+                    <li>4° - Lee Sin (Jungle)</li>
+                    <li>5° - Ezreal (Adc / Mid)</li>
+                </ul>
+                <button>🤟<span>0</span></button>
+                <button>😮‍💨<span>0</span></button>
+            </div>
+        </article>
+
+         <article>
+            <img src="Segundo.png">
+<div class="lol-classic-itens">
+    <h2>🛡️ Itens Icônicos do LoL Classic!</h2>
+    <p class="artigo"><strong>Por:</strong> Rafael Carvalho</p>
+    <p>No <strong>League of Legends Classic</strong>, alguns itens marcaram época e definiram estratégias inesquecíveis:</p>
+    <ul>
+        <li><strong>⚔️ Infinity Edge</strong> — O item mais temido dos ADCs, crítico devastador.</li>
+        <li><strong>💀 Deathfire Grasp</strong> — Explosão de dano mágico, essencial para magos.</li>
+        <li><strong>🩸 Bloodthirster</strong> — Roubo de vida acumulativo, sustain absurdo.</li>
+        <li><strong>🛡 Warmog’s Armor</strong> — Vida infinita, meta clássico de tanks.</li>
+        <li><strong>💎 Guardian Angel</strong> — Ressurreição em combate, salvava carries.</li>
+        <li><strong>🥤 Crystalline Flask</strong> — Sustento infinito na lane, muito usado no early game.</li>
+        <li><strong>💰 Heart of Gold</strong> — Geração de ouro passiva, suporte raiz.</li>
+        <li><strong>🔮 Oracle’s Elixir</strong> — Revelava wards e invisíveis, controle total de visão.</li>
+    </ul>
+    <blockquote><strong>💬 “Esses itens moldaram o meta e criaram memórias eternas no LoL Classic.”</strong></blockquote>
+    <button>🔥<span>0</span></button>
+    <button>⚡<span>0</span></button>
+    <button>🎯<span>0</span></button>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <p class="direitos">Todos os direitos estão reservados a Rafael Carvalho.</p>
+    </footer>
+
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    });
+</script>
+</html>
